@@ -24,48 +24,48 @@
         <div class="row">
             <div class="col-xl-4">
 
-                <div class="card">
-                    <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
-                        <img src="
-                            <?php
-                            if ($this->session->has_userdata('foto')) {
-                                $array = get_headers(base_url('img/profil/'. $this->session->userdata('foto')));
-                                $string = $array[0];
-                                if (strpos($string, '200')) {
-                                    echo base_url('img/profil/') . $this->session->userdata('foto');
-                                }else {
-                                    echo base_url('img/default.jpeg');
+                    <div class="card">
+                        <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
+                            <img src="
+                                <?php
+                                if ($this->session->has_userdata('foto')) {
+                                    $array = get_headers(base_url('img/profil/'. $this->session->userdata('foto')));
+                                    $string = $array[0];
+                                    if (strpos($string, '200')) {
+                                        echo base_url('img/profil/') . $this->session->userdata('foto');
+                                    }else {
+                                        echo base_url('img/profil/default.jpeg');
+                                    }
+                                } else {
+                                    echo base_url('img/profil/default.jpeg');
                                 }
-                            } else {
-                                echo base_url('img/default.jpeg');
-                            }
-                            ?>" alt="Profile" class="rounded-circle">
-                        <h2>
-                            <?php
-                            if ($this->session->has_userdata('username')) {
-                                echo $this->session->userdata('username');
-                            } else {
-                                echo 'Akun tidak dikenal';
-                            }
-                            ?>
-                        </h2>
-                        <h3>
-                            <?php
-                            if ($this->session->has_userdata('bagian')) {
-                                echo ucwords($this->session->userdata('bagian'));
-                            } else {
-                                echo 'Role belum diisi';
-                            }
-                            ?>
-                        </h3>
-                        <div class="social-links mt-2">
-                            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                                ?>" alt="Profile" class="rounded-circle">
+                            <h2>
+                                <?php
+                                if ($this->session->has_userdata('username')) {
+                                    echo $this->session->userdata('username');
+                                } else {
+                                    echo 'Akun tidak dikenal';
+                                }
+                                ?>
+                            </h2>
+                            <h3>
+                                <?php
+                                if ($this->session->has_userdata('bagian')) {
+                                    echo ucwords($this->session->userdata('bagian'));
+                                } else {
+                                    echo 'Role belum diisi';
+                                }
+                                ?>
+                            </h3>
+                            <div class="social-links mt-2">
+                                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
             </div>
 

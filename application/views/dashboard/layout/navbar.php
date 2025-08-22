@@ -42,7 +42,7 @@
               if ($this->session->has_userdata('foto')) {
                 echo base_url('img/profil/').$this->session->userdata('foto');
               } else {
-                echo base_url('img/default.jpeg');
+                echo base_url('img/profil/default.jpeg');
               }
               ?>" alt="Profile" class="rounded-circle">
             <span class="d-none d-md-block dropdown-toggle ps-2">

@@ -19,7 +19,7 @@
           <li><a class="nav-link scrollto" href="<?= base_url('index.php') ?>#features">Pelayanan</a></li>
           <li><a class="nav-link scrollto" href="<?= base_url('index.php') ?>#portfolio">Daftar Kendaraan</a></li>
           <li><a class="nav-link scrollto" href="<?= base_url('index.php') ?>#contact">Hubungi Kami</a></li>
-          <li class="m-2"><a class="btn btn-getstarted scrollto" href="<?= base_url('index.php') ?>/Dashboard">Dashboard</a></li>
+          <li class="m-2"><a class="btn btn-getstarted scrollto" href="<?= base_url('index.php/dashboard') ?>">Dashboard</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle d-none"></i>
       </nav><!-- .navbar -->
